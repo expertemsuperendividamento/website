@@ -839,6 +839,54 @@
     }
     </script>
 
+    <script>
+    function handleFormSubmit(event) {
+        event.preventDefault();
+        const form = event.target;
+        const formData = new FormData(form);
+
+        fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+        }).then(response => {
+        if (response.ok) {
+            const firstName = formData.get("nome");
+            const lastName = formData.get("sobrenome");
+            const email = formData.get("email");
+            const phone = formData.get("telefone");
+            const cidade = formData.get("cidade");
+            const estado = formData.get("estado");
+            const ocupacao = formData.get("ocupacao");
+            const objetivo = formData.get("objetivo");
+            const preferencia = formData.get("preferencia_contato");
+
+            // Envia dados para o Freshsales
+            if (window.fwcrm && typeof fwcrm.identify === "function") {
+            fwcrm.identify(email, {
+                "First name": firstName,
+                "Last name": lastName,
+                "Email": email,
+                "Alternate contact number": phone,
+                "Cidade": cidade,
+                "Estado": estado,
+                "Ocupação": ocupacao,
+                "Objetivo": objetivo,
+                "Preferência de Contato": preferencia
+            });
+            }
+
+            // Mensagem de sucesso
+            form.reset();
+            form.classList.add('hidden');
+            document.getElementById('form-success').classList.remove('hidden');
+        } else {
+            alert('Erro ao enviar. Tente novamente mais tarde.');
+        }
+        });
+    }
+    </script>
+
 <!-- Footer -->
 
     <footer class="bg-dark text-white py-12">
