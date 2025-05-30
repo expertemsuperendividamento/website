@@ -92,6 +92,7 @@
                 <a href="#faq" class="font-medium hover:text-secondary transition-colors">FAQ</a>
                 <a href="#depoimentos" class="font-medium hover:text-secondary transition-colors">Depoimentos</a>
                 <a href="#contato" class="font-medium hover:text-secondary transition-colors">Contato</a>
+                <a href="/login" class="hidden md:inline-block bg-primary hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-lg transition-colors">Entrar</a>
             </nav>
             <button class="md:hidden text-primary">
                 <i class="fas fa-bars text-2xl"></i>
@@ -275,6 +276,118 @@
                         </a>
                     </div>
                 </div>
+
+                <!-- Course 3 (finalização) -->
+<li class="flex items-start">
+    <i class="fas fa-check text-secondary mt-1 mr-2"></i>
+    <span>Encontros personalizados via videoconferência</span>
+</li>
+</ul>
+<a href="#formulario" class="block w-full bg-primary hover:bg-blue-800 text-white text-center font-bold py-3 px-4 rounded-lg transition-colors">
+    QUERO AGENDAR MENTORIA <i class="fas fa-arrow-right ml-2"></i>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- FAQ Section -->
+<section id="faq" class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-primary mb-4">Perguntas Frequentes</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">Tire suas dúvidas sobre os cursos, mentorias e como se especializar em Superendividamento.</p>
+    </div>
+    <div class="space-y-6">
+      <div class="faq-item bg-gray-100 p-6 rounded-lg cursor-pointer">
+        <div class="flex justify-between items-center">
+          <h3 class="text-lg font-semibold">Preciso ser advogado para fazer os cursos?</h3>
+          <i class="fas fa-chevron-down faq-toggle transition-transform"></i>
+        </div>
+        <div class="faq-answer text-gray-700 mt-4">
+          <p>Não. Os cursos são indicados para advogados, bacharéis em direito, estagiários e interessados em atuar com a Lei do Superendividamento.</p>
+        </div>
+      </div>
+      <div class="faq-item bg-gray-100 p-6 rounded-lg cursor-pointer">
+        <div class="flex justify-between items-center">
+          <h3 class="text-lg font-semibold">Recebo certificado após concluir o curso?</h3>
+          <i class="fas fa-chevron-down faq-toggle transition-transform"></i>
+        </div>
+        <div class="faq-answer text-gray-700 mt-4">
+          <p>Sim. Todos os cursos oferecem certificado de conclusão com carga horária e dados personalizados.</p>
+        </div>
+      </div>
+      <div class="faq-item bg-gray-100 p-6 rounded-lg cursor-pointer">
+        <div class="flex justify-between items-center">
+          <h3 class="text-lg font-semibold">Posso atuar no CEJUSC depois da formação?</h3>
+          <i class="fas fa-chevron-down faq-toggle transition-transform"></i>
+        </div>
+        <div class="faq-answer text-gray-700 mt-4">
+          <p>Sim. A formação visa justamente preparar profissionais para atuação prática, inclusive em CEJUSCs de todo o Brasil.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('active');
+    });
+  });
+</script>
+
+
+<!-- Testimonials Section -->
+<section id="depoimentos" class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-primary mb-4">O que dizem nossos alunos</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">Veja como a formação transformou a carreira de profissionais em todo o país.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Testimonial 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-md testimonial-card">
+        <img src="https://api.dicebear.com/6.x/open-peeps/svg?seed=AnaAdvogada" alt="Ana, advogada" class="w-20 h-20 rounded-full mx-auto mb-4">
+        <h3 class="text-lg font-bold text-center mb-2">Ana Carvalho</h3>
+        <p class="text-sm text-center text-gray-500 mb-4">Advogada - MG</p>
+        <p class="text-gray-700 text-center">"O curso avançado me deu segurança para atuar no CEJUSC. Já fechei meus primeiros acordos!"</p>
+      </div>
+      <!-- Testimonial 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-md testimonial-card">
+        <img src="https://api.dicebear.com/6.x/open-peeps/svg?seed=PedroEstudante" alt="Pedro, estudante" class="w-20 h-20 rounded-full mx-auto mb-4">
+        <h3 class="text-lg font-bold text-center mb-2">Pedro Santos</h3>
+        <p class="text-sm text-center text-gray-500 mb-4">Estudante de Direito - SP</p>
+        <p class="text-gray-700 text-center">"Excelente didática e muito conteúdo prático. Superou minhas expectativas!"</p>
+      </div>
+      <!-- Testimonial 3 -->
+      <div class="bg-white p-6 rounded-lg shadow-md testimonial-card">
+        <img src="https://api.dicebear.com/6.x/open-peeps/svg?seed=LuciaBacharel" alt="Lucia, bacharel" class="w-20 h-20 rounded-full mx-auto mb-4">
+        <h3 class="text-lg font-bold text-center mb-2">Lúcia Mendes</h3>
+        <p class="text-sm text-center text-gray-500 mb-4">Bacharel em Direito - BA</p>
+        <p class="text-gray-700 text-center">"Foi a melhor decisão da minha carreira. Hoje presto consultoria com total confiança!"</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-8 mt-16">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-sm">
+        <p>&copy; 2025 Dr. Adriano Hermida Maia. Todos os direitos reservados.</p>
+        <div class="flex space-x-4 mt-4 md:mt-0">
+            <a href="/politica-de-privacidade" class="hover:underline">Política de Privacidade</a>
+            <a href="/termos-de-uso" class="hover:underline">Termos de Uso</a>
+            <a href="/suporte" class="hover:underline">Suporte</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
+
                 
                 <!-- Course 3 -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden">
