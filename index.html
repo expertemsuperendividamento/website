@@ -281,52 +281,92 @@
     </div>
     </section>
 
-<!-- FAQ Section -->
+    <!-- FAQ Section -->
     <section id="faq" class="py-16 bg-white">
     <div class="container mx-auto px-4">
         <div class="text-center mb-12">
         <h2 class="text-3xl font-bold text-primary mb-4">Perguntas Frequentes</h2>
-        <p class="text-gray-600 max-w-2xl mx-auto">Tire suas dúvidas sobre os cursos, mentorias e como se especializar em Superendividamento.</p>
+        <p class="text-gray-600 max-w-2xl mx-auto">Tire suas dúvidas sobre nossos cursos, mentorias, certificações e como atuar com superendividamento na prática.</p>
         </div>
-        <div class="space-y-6">
+
+        <div class="space-y-4">
+
+        <!-- FAQ ITEM 1 -->
         <div class="faq-item bg-gray-100 p-6 rounded-lg cursor-pointer">
-            <div class="flex justify-between items-center">
-            <h3 class="text-lg font-semibold">Preciso ser advogado para fazer os cursos?</h3>
-            <i class="fas fa-chevron-down faq-toggle transition-transform"></i>
-            </div>
-            <div class="faq-answer text-gray-700 mt-4">
-            <p>Não. Os cursos são indicados para advogados, bacharéis em direito, estagiários e interessados em atuar com a Lei do Superendividamento.</p>
+            <h3 class="font-semibold text-lg">Preciso ser advogado para fazer os cursos?</h3>
+            <div class="faq-answer text-gray-700 mt-2 hidden">
+            Não. Nossos cursos são abertos a estudantes, bacharéis, servidores e qualquer pessoa interessada em atuar como consultor extrajudicial. Para atuação no CEJUSC como conciliador ou consultor, não é necessário ser advogado.
             </div>
         </div>
+
+        <!-- FAQ ITEM 2 -->
         <div class="faq-item bg-gray-100 p-6 rounded-lg cursor-pointer">
-            <div class="flex justify-between items-center">
-            <h3 class="text-lg font-semibold">Recebo certificado após concluir o curso?</h3>
-            <i class="fas fa-chevron-down faq-toggle transition-transform"></i>
-            </div>
-            <div class="faq-answer text-gray-700 mt-4">
-            <p>Sim. Todos os cursos oferecem certificado de conclusão com carga horária e dados personalizados.</p>
+            <h3 class="font-semibold text-lg">Recebo certificado após concluir o curso?</h3>
+            <div class="faq-answer text-gray-700 mt-2 hidden">
+            Sim! Todos os cursos oferecem certificado digital de conclusão, que pode ser utilizado para comprovação de capacitação no CEJUSC ou aprimoramento profissional.
             </div>
         </div>
+
+        <!-- FAQ ITEM 3 -->
         <div class="faq-item bg-gray-100 p-6 rounded-lg cursor-pointer">
-            <div class="flex justify-between items-center">
-            <h3 class="text-lg font-semibold">Posso atuar no CEJUSC depois da formação?</h3>
-            <i class="fas fa-chevron-down faq-toggle transition-transform"></i>
-            </div>
-            <div class="faq-answer text-gray-700 mt-4">
-            <p>Sim. A formação visa justamente preparar profissionais para atuação prática, inclusive em CEJUSCs de todo o Brasil.</p>
+            <h3 class="font-semibold text-lg">Posso atuar no CEJUSC depois da formação?</h3>
+            <div class="faq-answer text-gray-700 mt-2 hidden">
+            Sim. Nossa formação prepara você para atuar como consultor ou facilitador extrajudicial em CEJUSCs, inclusive em parceria com prefeituras e órgãos públicos. A atuação judicial (processual) depende de registro profissional, mas a extrajudicial está aberta a capacitados.
             </div>
         </div>
+
+        <!-- FAQ ITEM 4 -->
+        <div class="faq-item bg-gray-100 p-6 rounded-lg cursor-pointer">
+            <h3 class="font-semibold text-lg">Existe conteúdo sobre prática processual também?</h3>
+            <div class="faq-answer text-gray-700 mt-2 hidden">
+            Sim. Temos módulos exclusivos voltados à prática processual em superendividamento: petições iniciais, audiências, estratégias em execução e defesa técnica com base na jurisprudência atualizada.
+            </div>
+        </div>
+
+        <!-- FAQ ITEM 5 -->
+        <div class="faq-item bg-gray-100 p-6 rounded-lg cursor-pointer">
+            <h3 class="font-semibold text-lg">Como funciona a comunidade de alunos?</h3>
+            <div class="faq-answer text-gray-700 mt-2 hidden">
+            A comunidade funciona em um ambiente fechado, estilo Hotmart Club, com fóruns temáticos, postagens, atualizações de jurisprudência e trocas diretas com alunos, professores e mentores. O acesso é vitalício para quem está em um plano ativo.
+            </div>
+        </div>
+
+        <!-- FAQ ITEM 6 -->
+        <div class="faq-item bg-gray-100 p-6 rounded-lg cursor-pointer">
+            <h3 class="font-semibold text-lg">Preciso ter experiência anterior para fazer os cursos?</h3>
+            <div class="faq-answer text-gray-700 mt-2 hidden">
+            Não. Os cursos foram desenvolvidos para atender desde iniciantes (inclusive estudantes de graduação) até profissionais que já atuam e querem se especializar ou migrar para a área de superendividamento.
+            </div>
+        </div>
+
+        <!-- FAQ ITEM 7 -->
+        <div class="faq-item bg-gray-100 p-6 rounded-lg cursor-pointer">
+            <h3 class="font-semibold text-lg">Os encontros da mentoria são presenciais?</h3>
+            <div class="faq-answer text-gray-700 mt-2 hidden">
+            Não. Todas as mentorias, inclusive individuais, são realizadas por videoconferência com agendamento direto. Você pode participar de qualquer lugar do Brasil.
+            </div>
+        </div>
+
         </div>
     </div>
-    </section>
 
+    <!-- Accordion behavior script -->
     <script>
-    document.querySelectorAll('.faq-item').forEach(item => {
+        document.querySelectorAll('.faq-item').forEach(item => {
         item.addEventListener('click', () => {
-        item.classList.toggle('active');
+            const open = item.classList.contains('active');
+            document.querySelectorAll('.faq-item').forEach(i => {
+            i.classList.remove('active');
+            i.querySelector('.faq-answer').classList.add('hidden');
+            });
+            if (!open) {
+            item.classList.add('active');
+            item.querySelector('.faq-answer').classList.remove('hidden');
+            }
         });
-    });
+        });
     </script>
+    </section>
 
 
 <!-- Testimonials Section -->
