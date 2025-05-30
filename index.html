@@ -829,28 +829,6 @@
         headers: { 'Accept': 'application/json' }
         }).then(response => {
         if (response.ok) {
-            form.reset();
-            form.classList.add('hidden');
-            document.getElementById('form-success').classList.remove('hidden');
-        } else {
-            alert('Erro ao enviar. Tente novamente mais tarde.');
-        }
-        });
-    }
-    </script>
-
-    <script>
-    function handleFormSubmit(event) {
-        event.preventDefault();
-        const form = event.target;
-        const formData = new FormData(form);
-
-        fetch(form.action, {
-        method: form.method,
-        body: formData,
-        headers: { 'Accept': 'application/json' }
-        }).then(response => {
-        if (response.ok) {
             const firstName = formData.get("nome");
             const lastName = formData.get("sobrenome");
             const email = formData.get("email");
