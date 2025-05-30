@@ -1,0 +1,25 @@
+{
+  "name": "Expert em Superendividamento",
+  "short_name": "ExpertSuper",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f2f5ed",
+  "theme_color": "#00A894",
+  "icons": [
+    {
+      "src": "/favicon-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ]
+}
