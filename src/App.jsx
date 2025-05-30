@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
 import LoadingSpinner from './components/LoadingSpinner';
+import LandingPage from './pages/LandingPage';
 
 const Dashboard = React.lazy(() => import('./pages/Dashboard'));
 const CourseView = React.lazy(() => import('./pages/CourseView'));
@@ -9,11 +9,11 @@ const CourseView = React.lazy(() => import('./pages/CourseView'));
 function App() {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Navbar />
       <Suspense fallback={<LoadingSpinner />}>
         <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/course/:id" element={<CourseView />} />
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/app" element={<Dashboard />} />
+          <Route path="/app/course/:id" element={<CourseView />} />
         </Routes>
       </Suspense>
     </div>
