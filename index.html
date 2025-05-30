@@ -730,7 +730,17 @@
 
         <div>
             <label for="telefone" class="block text-sm font-medium text-gray-700">Celular com DDD</label>
-            <input type="tel" id="telefone" name="telefone" pattern="\(\d{2}\)\s?\d{4,5}-\d{4}" placeholder="(11) 91234-5678" required class="mt-1 block w-full border border-gray-300 rounded-md p-2">
+            <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                required
+                pattern="\(?\d{2}\)?\s?\d{4,5}-?\d{4}"
+                placeholder="(92) 98509-0354"
+                title="Digite no formato (99) 99999-9999"
+                class="mt-1 block w-full border border-gray-300 rounded-md p-2"
+                />
+
         </div>
 
         <div>
