@@ -17,7 +17,8 @@
 /backend/
 # (se tiver dados do usuário ou uploads)
 /uploads/
-
+# (se tiver arquivos de imagem do usuário)
+/img/
 # Mono auto generated files
 mono_crash.*
 
