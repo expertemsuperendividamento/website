@@ -717,6 +717,43 @@
     </div>
     </section>
 
+<!-- Agendamento Gratuito -->
+    <section id="formulario" class="py-20 bg-white">
+    <div class="container mx-auto px-4 max-w-3xl text-center">
+        <h2 class="text-3xl font-bold text-primary mb-4">📅 Agende sua Avaliação Gratuita</h2>
+        <p class="text-gray-700 text-lg mb-8">
+        Ainda não sabe por onde começar ou qual curso escolher? Preencha o formulário abaixo e receba uma avaliação personalizada para o seu perfil.
+        </p>
+
+        <form action="/backend/formulario.php" method="POST" class="space-y-6 text-left bg-gray-50 p-6 rounded-lg shadow-md">
+
+        <div>
+            <label for="nome" class="block text-sm font-medium text-gray-700">Nome completo</label>
+            <input type="text" id="nome" name="nome" required class="mt-1 block w-full border border-gray-300 rounded-md p-2">
+        </div>
+
+        <div>
+            <label for="email" class="block text-sm font-medium text-gray-700">E-mail</label>
+            <input type="email" id="email" name="email" required class="mt-1 block w-full border border-gray-300 rounded-md p-2">
+        </div>
+
+        <div>
+            <label for="objetivo" class="block text-sm font-medium text-gray-700">Qual seu objetivo?</label>
+            <select id="objetivo" name="objetivo" required class="mt-1 block w-full border border-gray-300 rounded-md p-2">
+            <option value="" disabled selected>Escolha uma opção</option>
+            <option value="consultoria">Quero atuar como consultor extrajudicial</option>
+            <option value="advocacia">Sou advogado e quero especialização prática</option>
+            <option value="orientacao">Quero orientação sobre minha situação financeira</option>
+            </select>
+        </div>
+
+        <button type="submit" class="w-full bg-primary hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg transition">
+            Enviar e Agendar Avaliação
+        </button>
+
+        </form>
+    </div>
+    </section>
 
 <!-- Footer -->
 

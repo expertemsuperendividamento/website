@@ -13,6 +13,11 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+# Não rastrear scripts de backend
+/backend/
+# (se tiver dados do usuário ou uploads)
+/uploads/
+
 # Mono auto generated files
 mono_crash.*
 
