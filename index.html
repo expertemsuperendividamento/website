@@ -816,55 +816,55 @@
     </div>
     </section>
 
-    <script>
+<script>
     function handleFormSubmit(event) {
-        // Exibe mensagem e evita redirecionamento
-        event.preventDefault();
-        const form = event.target;
-        const formData = new FormData(form);
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
 
-        fetch(form.action, {
+    fetch(form.action, {
         method: form.method,
         body: formData,
         headers: { 'Accept': 'application/json' }
-        }).then(response => {
+    }).then(response => {
         if (response.ok) {
-            const firstName = formData.get("nome");
-            const lastName = formData.get("sobrenome");
-            const email = formData.get("email");
-            const phone = formData.get("telefone");
-            const cidade = formData.get("cidade");
-            const estado = formData.get("estado");
-            const ocupacao = formData.get("ocupacao");
-            const objetivo = formData.get("objetivo");
-            const preferencia = formData.get("preferencia_contato");
+        // Coleta os dados do formulário
+        const firstName = formData.get("nome");
+        const lastName = formData.get("sobrenome");
+        const email = formData.get("email");
+        const phone = formData.get("telefone");
+        const cidade = formData.get("cidade");
+        const estado = formData.get("estado");
+        const ocupacao = formData.get("ocupacao");
+        const objetivo = formData.get("objetivo");
+        const preferencia = formData.get("preferencia_contato");
 
-            // Envia dados para o Freshsales
-            if (window.fwcrm && typeof fwcrm.identify === "function") {
+        // Envia para Freshsales se disponível
+        if (window.fwcrm && typeof fwcrm.identify === "function") {
             fwcrm.identify(email, {
-                "First name": firstName,
-                "Last name": lastName,
-                "Email": email,
-                "Alternate contact number": mobile_number,
-                "Cidade": cf_cidade,
-                "Estado": cf_estado_uf,
-                "Ocupação": job_title,
-                "Objetivo": cf_objetivo,
-                "Preferência de Contato": cf_modo_contato
+            "First name": firstName,
+            "Last name": lastName,
+            "Email": email,
+            "Mobile": phone,
+            "Cidade": cidade,
+            "Estado": estado,
+            "Ocupação": ocupacao,
+            "Objetivo": objetivo,
+            "Preferência de Contato": preferencia
             });
-            }
-
-            // Mensagem de sucesso
-            form.reset();
-            form.classList.add('hidden');
-            document.getElementById('form-success').classList.remove('hidden');
-        } else {
-            alert('Erro ao enviar. Tente novamente mais tarde.');
         }
-        });
+
+        // Esconde formulário, mostra mensagem de sucesso
+        form.reset();
+        form.classList.add('hidden');
+        document.getElementById('form-success').classList.remove('hidden');
+        } else {
+        alert('Erro ao enviar. Tente novamente mais tarde.');
+        }
+    });
     }
     </script>
-
+<!DOCTYPE html>
 <!-- Footer -->
 
     <footer class="bg-dark text-white py-12">
