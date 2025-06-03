@@ -85,30 +85,44 @@
 <body class="font-sans antialiased text-gray-800">
     <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center">
-                <div class="flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-10 w-10 text-primary">
-                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                    </svg>
-                    <h1 class="text-xl font-bold ml-2">
-                        <span class="logo-text">Expert em Superendividamento</span>
-                    </h1>
-                </div>
-            </div>
-            <nav class="hidden md:flex space-x-8">
-                <a href="#sobre" class="font-medium hover:text-secondary transition-colors">Sobre</a>
-                <a href="#cursos" class="font-medium hover:text-secondary transition-colors">Cursos</a>
-                <a href="#mentoria" class="font-medium hover:text-secondary transition-colors">Mentoria</a>
-                <a href="#faq" class="font-medium hover:text-secondary transition-colors">FAQ</a>
-                <a href="#depoimentos" class="font-medium hover:text-secondary transition-colors">Depoimentos</a>
-                <a href="#contato" class="font-medium hover:text-secondary transition-colors">Contato</a>
-                <a href="/login" class="hidden md:inline-block bg-primary hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-lg transition-colors">Entrar</a>
-            </nav>
-            <button class="md:hidden text-primary">
-                <i class="fas fa-bars text-2xl"></i>
-            </button>
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-10 w-10 text-primary">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <h1 class="text-xl font-bold ml-2">
+            <span class="logo-text">Expert em Superendividamento</span>
+        </h1>
         </div>
+
+        <!-- Navegação Desktop -->
+        <nav class="hidden md:flex space-x-8">
+        <a href="#sobre" class="font-medium hover:text-secondary transition-colors">Sobre</a>
+        <a href="#cursos" class="font-medium hover:text-secondary transition-colors">Cursos</a>
+        <a href="#mentoria" class="font-medium hover:text-secondary transition-colors">Mentoria</a>
+        <a href="#faq" class="font-medium hover:text-secondary transition-colors">FAQ</a>
+        <a href="#depoimentos" class="font-medium hover:text-secondary transition-colors">Depoimentos</a>
+        <a href="#contato" class="font-medium hover:text-secondary transition-colors">Contato</a>
+        <a href="/login" class="hidden md:inline-block bg-primary hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-lg transition-colors">Entrar</a>
+        </nav>
+
+        <!-- Botão do menu mobile -->
+        <button id="mobile-menu-toggle" class="md:hidden text-primary" aria-label="Abrir menu de navegação">
+        <i class="fas fa-bars text-2xl"></i>
+        </button>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 py-2 space-y-2 bg-white shadow-lg">
+        <a href="#sobre" class="block font-medium hover:text-secondary">Sobre</a>
+        <a href="#cursos" class="block font-medium hover:text-secondary">Cursos</a>
+        <a href="#mentoria" class="block font-medium hover:text-secondary">Mentoria</a>
+        <a href="#faq" class="block font-medium hover:text-secondary">FAQ</a>
+        <a href="#depoimentos" class="block font-medium hover:text-secondary">Depoimentos</a>
+        <a href="#contato" class="block font-medium hover:text-secondary">Contato</a>
+        <a href="/login" class="block bg-primary text-white font-bold py-2 px-4 rounded-lg text-center">Entrar</a>
+    </div>
     </header>
 
     <!-- Hero Section -->
