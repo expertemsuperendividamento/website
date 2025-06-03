@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos de uso | Expert em Superendividamento</title>
+    <meta name="description" content="Dr. Adriano Hermida Maia, autor do Manual do Superendividado, oferece cursos e mentorias para advogados e estudantes sobre a Lei do Superendividamento e repactuação de dívidas no CEJUSC.">
+    <meta name="keywords" content="superendividamento, lei superendividamento, repactuação dívidas, CEJUSC, defesa do devedor, curso direito, mentoria advogados, Adriano Hermida Maia">
+    <meta name="author" content="Dr. Adriano Hermida Maia">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E3A8A',
+                        secondary: '#10B981',
+                        accent: '#F59E0B',
+                        dark: '#1F2937',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1E3A8A 0%, #10B981 100%);
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .faq-item {
+            transition: all 0.3s ease;
+        }
+        .faq-item:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .logo-text {
+            font-weight: 700;
+            background: linear-gradient(135deg, #1E3A8A 0%, #10B981 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+        .body {
+            background-color: #f2f5ed;
+    }
+
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-10 w-10 text-primary">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                    <h1 class="text-xl font-bold ml-2">
+                        <span class="logo-text">Expert em Superendividamento</span>
+                    </h1>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#sobre" class="font-medium hover:text-secondary transition-colors">Sobre</a>
+                <a href="#cursos" class="font-medium hover:text-secondary transition-colors">Cursos</a>
+                <a href="#mentoria" class="font-medium hover:text-secondary transition-colors">Mentoria</a>
+                <a href="#faq" class="font-medium hover:text-secondary transition-colors">FAQ</a>
+                <a href="#depoimentos" class="font-medium hover:text-secondary transition-colors">Depoimentos</a>
+                <a href="#contato" class="font-medium hover:text-secondary transition-colors">Contato</a>
+                <a href="/login" class="hidden md:inline-block bg-primary hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-lg transition-colors">Entrar</a>
+            </nav>
+            <button class="md:hidden text-primary">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+
+    <main class="container mx-auto px-4 py-16 max-w-4xl">
+        <h1 class="text-3xl font-bold text-primary mb-8">Termos de Uso</h1>
+
+        <p class="mb-6">
+        Bem-vindo(a) ao site <strong>expertemsuperendividamento.com.br</strong>, administrado pelo advogado <strong>Dr. Adriano Hermida Maia</strong>, especialista em superendividamento e autor do livro "Manual do Superendividado". Ao acessar nossos conteúdos, cursos e mentorias, você concorda com os seguintes termos e condições de uso.
+        </p>
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">1. Aceitação dos Termos</h2>
+        <p class="mb-4">Ao adquirir qualquer curso, mentoria ou acessar a área de membros pela plataforma Hotmart Club, você concorda com os presentes Termos de Uso e com as Políticas da plataforma Hotmart, disponível em <a href="https://www.hotmart.com/legal" class="text-blue-600 underline">https://www.hotmart.com/legal</a>.</p>
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">2. Serviços Prestados</h2>
+        <p class="mb-4">Os cursos e mentorias são produzidos e ministrados pelo Dr. Adriano Hermida Maia, sendo de sua exclusiva responsabilidade o conteúdo educacional oferecido. Toda infraestrutura de pagamentos, acesso ao curso, hospedagem do conteúdo, reembolsos, e suporte técnico da plataforma são de responsabilidade exclusiva da Hotmart.</p>
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">3. Política de Reembolso</h2>
+        <p class="mb-4">A política de reembolso segue os termos da Hotmart, que garante ao comprador o direito de arrependimento em até 7 (sete) dias após a compra, conforme o Código de Defesa do Consumidor. A solicitação deve ser feita diretamente na plataforma.</p>
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">4. Propriedade Intelectual</h2>
+        <p class="mb-4">Todo o conteúdo disponibilizado, incluindo vídeos, textos, documentos, apostilas e áudios é protegido por direitos autorais e pertence exclusivamente ao Dr. Adriano Hermida Maia. É vedada a reprodução, redistribuição ou revenda sem autorização por escrito.</p>
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">5. Conduta do Usuário</h2>
+        <p class="mb-4">Você se compromete a utilizar os conteúdos com ética e boa-fé, respeitando os demais participantes da comunidade e os moderadores. Comportamentos abusivos podem acarretar a exclusão do acesso sem reembolso.</p>
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">6. Limitação de Responsabilidade</h2>
+        <p class="mb-4">O Dr. Adriano Hermida Maia não se responsabiliza por resultados específicos obtidos pelo usuário com base nos conhecimentos adquiridos. O uso da informação e sua aplicação prática é de inteira responsabilidade do aluno.</p>
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">7. Plataforma Hotmart</h2>
+        <p class="mb-4">O usuário declara estar ciente de que a Hotmart é responsável pela operação da área de membros, gestão de pagamentos, controle de acesso e hospedagem do conteúdo, conforme os <a href="https://www.hotmart.com/legal" class="text-blue-600 underline">Termos de Uso da Hotmart</a>.</p>
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">8. Modificações</h2>
+        <p class="mb-4">Estes Termos podem ser atualizados a qualquer momento sem aviso prévio. A versão mais recente estará sempre disponível nesta página.</p>
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">9. Foro e Legislação Aplicável</h2>
+        <p class="mb-4">Fica eleito o foro da comarca de Salvador – BA para dirimir quaisquer conflitos decorrentes destes termos, com renúncia expressa a qualquer outro, por mais privilegiado que seja.</p>
+
+        <p class="text-sm text-gray-600 mt-12">Atualizado em: 03 de junho de 2025</p>
+    </main>
+    
+    <!-- Footer -->
+
+    <footer class="bg-dark text-white py-12">
+    <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8 text-sm">
+
+        <!-- Branding -->
+        <div>
+        <h3 class="text-xl font-bold mb-4 text-accent">Expert em Superendividamento</h3>
+        <p class="mb-4">Cursos, mentorias e conteúdos do Dr. Adriano Hermida Maia para formação prática em Superendividamento e atuação no CEJUSC.</p>
+        <p class="text-xs">&copy; 2025. Todos os direitos reservados.</p>
+        </div>
+
+        <!-- Navegação Interna -->
+        <div>
+        <h4 class="font-semibold mb-3">Navegação</h4>
+        <ul class="space-y-2">
+            <li><a href="#sobre" class="hover:underline" aria-label="Ir para a seção Sobre" title="Sobre">Sobre</a></li>
+            <li><a href="#cursos" class="hover:underline" aria-label="Ir para a seção Cursos" title="Cursos">Cursos</a></li>
+            <li><a href="#mentoria" class="hover:underline" aria-label="Ir para a seção Mentoria" title="Mentoria">Mentoria</a></li>
+            <li><a href="#faq" class="hover:underline" aria-label="Ir para a seção de Perguntas Frequentes" title="FAQ">FAQ</a></li>
+            <li><a href="#depoimentos" class="hover:underline" aria-label="Ir para a seção de Depoimentos" title="Depoimentos">Depoimentos</a></li>
+            <li><a href="#formulario" class="hover:underline text-accent font-semibold" aria-label="Acessar formulário de inscrição" title="Inscreva-se agora">Inscreva-se Agora</a></li>
+        </ul>
+        </div>
+
+        <!-- Suporte e Contato -->
+        <div>
+        <h4 class="font-semibold mb-3">Suporte e Contato</h4>
+        <ul class="space-y-2">
+            <li><a href="/politica-de-privacidade" class="hover:underline" aria-label="Ver Política de Privacidade" title="Política de Privacidade">Política de Privacidade</a></li>
+            <li><a href="/termos-de-uso" class="hover:underline" aria-label="Ver Termos de Uso" title="Termos de Uso">Termos de Uso</a></li>
+            <li><a href="/suporte" class="hover:underline" aria-label="Ir para Central de Ajuda" title="Central de Ajuda">Central de Ajuda</a></li>
+            <li><a href="mailto:contato@expertemsuperendividamento.com.br" class="hover:underline" aria-label="Enviar email para suporte" title="Email de suporte">contato@expertemsuperendividamento.com.br</a></li>
+            <li class="flex space-x-4 mt-3">
+            <a href="https://www.linkedin.com/company/dradrianohermidamaia" aria-label="LinkedIn de Adriano Hermida Maia" title="LinkedIn">
+                <i class="fab fa-linkedin text-xl hover:text-secondary"></i>
+            </a>
+            <a href="https://www.instagram.com/dr.adrianohermidamaia" aria-label="Instagram de Adriano Hermida Maia" title="Instagram">
+                <i class="fab fa-instagram text-xl hover:text-secondary"></i>
+            </a>
+            <a href="https://www.facebook.com/hermidamaiaadv" aria-label="Facebook de Adriano Hermida Maia" title="Facebook">
+                <i class="fab fa-facebook text-xl hover:text-secondary"></i>
+            </a>
+            </li>
+        </ul>
+        </div>
+
+    </div>
+    </footer>
+
+    <script
+src='//fw-cdn.com/13149840/5333602.js'
+chat='true'>
+var new_contact = {
+	"First name": "John", //Replace with first name of the user
+	"Last name": "Doe", //Replace with last name of the user
+	"Email": "john.doe@example.com", //Replace with email of the user
+	"Alternate contact number": "98765432", //Replace with a custom field
+	"company": {
+		"Name": "Example.com", //Replace with company name
+		"Website": "www.example.com" //Replace with website of company
+	}
+};
+var identifier = "john.doe@example.com";
+fwcrm.identify(identifier, new_contact);
+FM.trackCustomEvent("Added to cart", {
+	"email": "david.thompson@sample.com",
+	"price": 100.21,
+	"currency": "USD",
+	"is_mobile_transaction": true,
+	"return date": "2019-12-30"
+});
+</script>
+
+</body>
+</html>
